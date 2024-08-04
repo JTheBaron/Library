@@ -6,10 +6,10 @@ local Library = {}
 function Library:CreateFrame()
     local frame = Instance.new("Frame")
     frame.Size = UDim2.new(0, 350, 0, 300) -- Smaller size for mobile compatibility
-    frame.Position = UDim2.new(0.5, -175, 0.5, -150) -- Centered position
+    frame.Position = UDim2.new(0.5, 0, 0.5, 0) -- Centered position
+    frame.AnchorPoint = Vector2.new(0.5, 0.5) -- Ensure the frame is centered
     frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     frame.BorderSizePixel = 0
-    frame.AnchorPoint = Vector2.new(0.5, 0.5)
     frame.Visible = true
     frame.ClipsDescendants = true
 
