@@ -5,8 +5,8 @@ local Library = {}
 -- Function to create a frame
 function Library:CreateFrame()
     local frame = Instance.new("Frame")
-    frame.Size = UDim2.new(0, 450, 0, 350)
-    frame.Position = UDim2.new(0.5, -225, 0.5, -175)
+    frame.Size = UDim2.new(0, 350, 0, 300) -- Smaller size for mobile compatibility
+    frame.Position = UDim2.new(0.5, -175, 0.5, -150) -- Centered position
     frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     frame.BorderSizePixel = 0
     frame.AnchorPoint = Vector2.new(0.5, 0.5)
